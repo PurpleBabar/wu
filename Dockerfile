@@ -8,4 +8,4 @@ RUN set -x \
     && git clone https://github.com/wu-lang/wu \
     && cd wu/ \
     && cargo install \
-    && apt-remove curl
+    && apt-get remove curl
