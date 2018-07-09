@@ -1,4 +1,4 @@
-FROM 1.27-slim
+FROM rust:1.27-slim
 LABEL maintainer="lalung.alexandre@gmail.com"
 
 RUN set -x \
