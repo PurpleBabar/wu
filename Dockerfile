@@ -4,7 +4,7 @@ LABEL maintainer="lalung.alexandre@gmail.com"
 RUN set -x \
 	&& apt-get update \
 	&& apt-get install --no-install-recommends --no-install-suggests -y curl git \
-    && curl https://sh.rustup.rs -sSf | sh \
+    && curl https://sh.rustup.rs -sSyf | sh \
     && git clone https://github.com/wu-lang/wu \
     && cd wu/ \
     && cargo install \
