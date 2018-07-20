@@ -8,4 +8,5 @@ RUN set -x \
     && git clone https://github.com/wu-lang/wu \
     && cd wu/ \
     && cargo install \
-    && apt-get remove curl
+    && apt-get remove -y curl \
+	&& apt-get autoremove -y
