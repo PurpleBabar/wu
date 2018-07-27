@@ -10,3 +10,5 @@ RUN set -x \
     && cargo install \
     && apt-get remove -y curl \
 	&& apt-get autoremove -y
+
+ENTRYPOINT ["wu"]
