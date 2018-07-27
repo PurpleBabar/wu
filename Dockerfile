@@ -11,4 +11,6 @@ RUN set -x \
     && apt-get remove -y curl \
 	&& apt-get autoremove -y
 
+WORKDIR /wu
+
 ENTRYPOINT ["wu"]
